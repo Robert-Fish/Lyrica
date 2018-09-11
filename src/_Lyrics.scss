@@ -1,0 +1,46 @@
+.lyrics {
+  background: $Orange;
+  padding: 30px;
+  border-radius: 20px;
+
+  -webkit-box-shadow: 1px 16px 57px -7px rgba(98, 12, 144, 1);
+  -moz-box-shadow: 1px 16px 57px -7px rgba(98, 12, 144, 1);
+  box-shadow: 1px 16px 57px -7px rgba(98, 12, 144, 1);
+
+  margin-bottom: 10px;
+}
+
+.lyrics-title {
+  color: #fff;
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 15px;
+}
+
+.lyrics-text {
+  color: #fff;
+  text-align: center;
+  white-space: pre-line;
+}
+
+.btn {
+  background: $Purple;
+  color: #fff;
+  margin-top: 10px;
+
+  :hover {
+    background: $Orange;
+    border: 1px $Orange solid;
+  }
+}
+
+.btn-back {
+  margin-left: 150px;
+}
+
+.list-group-item {
+  margin-bottom: 5px;
+  background: $Purple;
+  color: #fff;
+  margin: 0 150px 10px 150px;
+}

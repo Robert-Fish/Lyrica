@@ -1,0 +1,109 @@
+@import "Colors";
+@import "Lyrics";
+@import "Search";
+* {
+  font-family: "Arimo", sans-serif;
+}
+.App {
+  background: rgba(50, 55, 145, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(50, 55, 145, 1) 0%,
+    rgba(98, 12, 144, 1) 0%,
+    rgba(245, 83, 38, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(50, 55, 145, 1)),
+    color-stop(0%, rgba(98, 12, 144, 1)),
+    color-stop(100%, rgba(245, 83, 38, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(50, 55, 145, 1) 0%,
+    rgba(98, 12, 144, 1) 0%,
+    rgba(245, 83, 38, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(50, 55, 145, 1) 0%,
+    rgba(98, 12, 144, 1) 0%,
+    rgba(245, 83, 38, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(50, 55, 145, 1) 0%,
+    rgba(98, 12, 144, 1) 0%,
+    rgba(245, 83, 38, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(50, 55, 145, 1) 0%,
+    rgba(98, 12, 144, 1) 0%,
+    rgba(245, 83, 38, 1) 100%
+  );
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.navbar {
+  background: transparent;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.navbar-brand {
+  font-weight: light;
+
+  font-size: 2rem;
+}
+
+.track {
+  .card {
+    border: none;
+    background: $Purple;
+    padding: 9px;
+    border: transparent solid 1px;
+    transition: border 0.3s ease-in-out;
+    :hover {
+      background: $Orange;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 10px 11px 26px -3px $Blue;
+      border: $Purple solid 1px;
+    }
+
+    .btn-dark,
+    .btn,
+    .btn-block {
+      background: $Orange;
+    }
+  }
+
+  :hover {
+    h3,
+    h4 {
+      color: white;
+      box-shadow: none !important;
+      background: transparent !important;
+      border: none !important;
+    }
+  }
+
+  h3,
+  h4 {
+    text-transform: capitalize;
+    color: white;
+    background: transparent !important;
+  }
+}
+
+.heading {
+  text-decoration: underline;
+  text-decoration-color: $Orange;
+  color: white;
+}
+
+.btn {
+  box-shadow: none !important;
+}
